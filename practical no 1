@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class student
+{
+    int prn;
+    char name[50];
+    int marks;
+
+public:
+
+    void setdata()
+    {
+        cout << "Enter PRN: ";
+        cin >> prn;
+
+        cout << "Enter name: ";
+        cin >> name;
+
+        cout << "Enter marks: ";
+        cin >> marks;
+    }
+
+    void showData()
+    {
+        cout << "\n================ Student Information ================\n";
+        cout << "\nPRN: " << prn;
+        cout << "\nName: " << name;
+        cout << "\nMarks: " << marks;
+    }
+};
+
+int main()
+{
+    student s;
+
+    s.setdata();
+    s.showData();
+
+    return 0;
+}
